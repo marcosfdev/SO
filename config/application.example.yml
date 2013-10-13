@@ -7,9 +7,19 @@
 # makes 'Your_Gmail_Username' available as ENV["GMAIL_USERNAME"]
 # Add application configuration variables here, as shown below.
 #
+<<<<<<< HEAD
 GMAIL_USERNAME: Your_Username
 GMAIL_PASSWORD: Your_Password
 ADMIN_NAME: First User
 ADMIN_EMAIL: user@example.com
 ADMIN_PASSWORD: changeme
 ROLES: [admin, user, VIP]
+=======
+MANDRILL_USERNAME: Your_Username
+MANDRILL_API_KEY: Your_API_Key
+ADMIN_NAME: First User
+ADMIN_EMAIL: user@example.com
+ADMIN_PASSWORD: changeme
+OMNIAUTH_PROVIDER_KEY: Your_OmniAuth_Provider_Key
+OMNIAUTH_PROVIDER_SECRET: Your_OmniAuth_Provider_Secret
+>>>>>>> ecfb22563902877d522e109da995de1ddfd2f1a0

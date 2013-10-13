@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= link_to "Rails3 Bootstrap Devise Cancan", root_path, :class => 'brand' %>
 <ul class="nav">
   <% if user_signed_in? %>
@@ -21,6 +22,20 @@
   <% else %>
     <li>
     <%= link_to 'Sign up', new_user_registration_path %>
+=======
+<%= link_to "Ab", root_path, :class => 'brand' %>
+<ul class="nav">
+  <% if user_signed_in? %>
+    <li>
+    Logged in as <%= current_user.name %>
+    </li>
+    <li>
+    <%= link_to 'Logout', signout_path %>
+    </li>
+  <% else %>
+    <li>
+    <%= link_to 'Login', signin_path %>
+>>>>>>> ecfb22563902877d522e109da995de1ddfd2f1a0
     </li>
   <% end %>
 </ul>

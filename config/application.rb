@@ -1,5 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
+<<<<<<< HEAD
 # Pick the frameworks you want:
 require "active_record/railtie"
 require "action_controller/railtie"
@@ -16,13 +17,28 @@ if defined?(Bundler)
 end
 
 module Rails3BootstrapDeviseCancan
+=======
+require 'rails/all'
+
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(:default, Rails.env)
+
+module Ab
+>>>>>>> ecfb22563902877d522e109da995de1ddfd2f1a0
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
+<<<<<<< HEAD
       
       g.test_framework :rspec, fixture: true
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
+=======
+      g.test_framework :rspec
+      
+      
+>>>>>>> ecfb22563902877d522e109da995de1ddfd2f1a0
       
       
       g.view_specs false
@@ -33,6 +49,7 @@ module Rails3BootstrapDeviseCancan
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+<<<<<<< HEAD
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
     config.autoload_paths += %W(#{config.root}/lib)
@@ -45,6 +62,8 @@ module Rails3BootstrapDeviseCancan
     # Activate observers that should always be running.
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
+=======
+>>>>>>> ecfb22563902877d522e109da995de1ddfd2f1a0
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
@@ -52,6 +71,7 @@ module Rails3BootstrapDeviseCancan
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+<<<<<<< HEAD
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -78,5 +98,7 @@ module Rails3BootstrapDeviseCancan
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+=======
+>>>>>>> ecfb22563902877d522e109da995de1ddfd2f1a0
   end
 end

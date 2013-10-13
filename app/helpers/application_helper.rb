@@ -1,4 +1,5 @@
 module ApplicationHelper
+<<<<<<< HEAD
 
   def display_base_errors resource
     return '' if (resource.errors.empty?) or (resource.errors[:base].empty?)
@@ -12,4 +13,6 @@ module ApplicationHelper
     html.html_safe
   end
 
+=======
+>>>>>>> ecfb22563902877d522e109da995de1ddfd2f1a0
 end
